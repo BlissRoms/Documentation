@@ -1,16 +1,14 @@
 # Build BlissRom
 
-## Updated for Android 10 \(q\)
+## Introduction
 
-### Introduction
-
-This is the official guide to build BlissRoms for your device. In this guide, we will only cover official devices with actual maintainers. We will not delve into porting devices.
+This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers. We will not delve into porting devices.
 
 The golden rule to building is patience. If something breaks, wait for your maintainer to fix it, send a polite message to your maintainer, or better yet, try and fix it yourself. Then you can make a merge request and contribute!
 
 Let’s get started.
 
-### Preparation
+## Preparation
 
 To get started, you need a computer with Ubuntu 18.04 \(LTS\), at least 200GB space of HDD, and at least 8GB RAM. A decent CPU \(or CPUs if you have a server motherboard\) is recommended. Other distros can work but is not officially supported in this guide.
 
@@ -34,7 +32,7 @@ sudo apt install git gnupg flex bison gperf build-essential zip curl zlib1g-dev 
 
 ### Install source code tools
 
-Now we need to get the source code via a program named `repo`. The primary function of `repo` is to read a manifest file located in BlissRoms's GitHub organization, and find what repositories you need to actually build Android.
+Now we need to get the source code via a program named `repo`. The primary function of `repo` is to read a manifest file located in BlissRoms GitHub organization, and find what repositories you need to actually build Android.
 
 Create a `~/bin` directory for `repo`:
 
@@ -104,7 +102,7 @@ git config --global user.name "John Appleseed"
 Now, we’re ready to initialize. We need to tell `repo` which manifest to read:
 
 ```text
-repo init -u https://github.com/BlissRoms/platform_manifest.git -b q
+repo init -u https://github.com/BlissRoms/platform_manifest.git -b r
 ```
 
 `-b` is for the branch, and we’re on `q`, Android 10. It’ll take a couple of seconds. You may need to type `y` for the color prompt.
@@ -222,8 +220,3 @@ Building a ROM is very hard and tedious and the results are very rewarding! If y
 After you finish building, you can try out the Git Started guide. Make changes, commit, and send them off to our Gerrit for review! Or better yet, download experimental commits not ready for the mainline repositories and review them! Again, ROM building is a fun project you can work with. I hope this guide was a lot of fun to run through!
 
 -- Eric Park \(ideaman924\)
-
-### Looking for the next tutorial?
-
-Check out [some tips to optimize your build experience.](build-tips.md)
-
