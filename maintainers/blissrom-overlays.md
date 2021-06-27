@@ -128,6 +128,32 @@ This overlay is required to Enable FOD Support. Required inorder for FOD to work
     <bool name="config_needCustomFODView">true</bool>
 ```
 
+• FOD Animations
+----------------
+For FOD Animation to work you need 2 things in your device tree source.
+
+  - A Flag in bliss_codename.mk makefile in your respective device tree
+  - An overlay to set Default FOD Pressed Color
+
+**Flag Required to build FOD Animation resources**
+
+```
+TARGET_WANTS_FOD_ANIMATIONS := true
+```
+
+**To set Default FOD Pressed color**
+```
+Overlay Path: overlay/frameworks/base/core/res/res/values/config.xml
+Default status: Disabled
+```
+
+This overlay is required to set Default FOD Pressed Color.
+
+```
+    <!-- Default fod pressed color -->
+    <integer name="config_fod_pressed_color">1</integer>
+```
+
 • Screen-Off FOD
 ----------------
 
