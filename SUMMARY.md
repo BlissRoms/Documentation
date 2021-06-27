@@ -6,3 +6,6 @@
 
 * [Build BlissRom](build-blissrom/build-guide.md)
 
+## Maintainers
+
+* [Requirements](maintainers/requirements.md)
