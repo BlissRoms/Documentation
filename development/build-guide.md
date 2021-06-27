@@ -127,10 +127,10 @@ Set up the build environment:
 
 This is the initialization file we talked about earlier up top. This "initializes" the environment, and imports a bunch of useful build commands required to build your device. Again, you need to remember to `source` this file every time you log out and log back in, or launch a new `bash`/Terminal instance.
 
-Define what device you’re going to build. For example, the Nexus 5X, has a codename of `bullhead`. You can check your specific device's codename on GitHub or on Google. Execute:
+Define what device you’re going to build. For example, the Pixel 4A, has a codename of `sunfish`. You can check your specific device's codename on GitHub or on Google. Execute:
 
 ```text
-breakfast bullhead
+breakfast sunfish
 ```
 
 What does this do? `breakfast` searches repositories for your device "tree", which contains all the details needed to make the build suitable for your device. CPU, kernel info, device screen size, whether the board has Bluetooth, NFC, what frequencies the build needs for Wi-Fi, and a bunch of other things. `breakfast` will automatically search in the `BlissRoms-Devices` GitHub repository, and grab your device tree for you.
@@ -146,10 +146,10 @@ will dump you back in the root of the source code tree. So if you’ve been goin
 We're ready to build, but before we teach you the easy command to execute a build, we will first try the manual method. To set up the current terminal environment for building your particular device, execute:
 
 ```text
-lunch bliss_bullhead-userdebug
+lunch bliss_sunfish-userdebug
 ```
 
-Let's break down the command. `lunch` initializes the proper environmental variables required for the build tools to build your specific device. Things like `BLISS_DEVICE` and other variables are set in this stage, and the changed variables will be shown as output. `bliss_` is the ROM that we are building. As convention, all devices will have this prefix. `bullhead` is the specific device we are building - in this case, the Nexus 5X. Finally, `userdebug` means that we will build a user-debuggable variant. This is usually what most ROMs use for publishing their builds. Manufacturers typically use `user` which disables most of the useful Android Logcats.
+Let's break down the command. `lunch` initializes the proper environmental variables required for the build tools to build your specific device. Things like `BLISS_DEVICE` and other variables are set in this stage, and the changed variables will be shown as output. `bliss_` is the ROM that we are building. As convention, all devices will have this prefix. `sunfish` is the specific device we are building - in this case, the Pixel 4A. Finally, `userdebug` means that we will build a user-debuggable variant. This is usually what most ROMs use for publishing their builds. Manufacturers typically use `user` which disables most of the useful Android Logcats.
 
 #### My device isn't booting, and `userdebug` won't print any `adb logcat`s. What gives?
 
@@ -174,14 +174,66 @@ If you are building other ROMs, it is usually `make bacon`. For BlissRoms, we ch
 All right, but that's annoying. You had to type **three** commands to build it all. What about running one command?
 
 ```text
-blissify bullhead
+     blissify options codename
+```
+
+**Options:**
+```
+-h | --help: Shows the help dialog
+-c | --clean: Clean up before running the build
+-d | --devclean: Clean up device only before running the build
+-v | --vanilla: Build with no added app store solution **default option**
+-g | --gapps: Build with Google Play Services added
+-f | --foss: build with FOSS (arm64-v8a) app store solutions added **requires vendor/foss**
+-u : userdebug (default)
+-U : user
+-e : eng
+```
+
+**Examples:**
+
+- **To build with gapps**
+```
+     blissify -g sunfish
+```
+
+- **To build with FOSS**
+```
+     blissify -f sunfish
+```
+
+- **To build with gapps and deviceclean**
+```
+     blissify -g -d sunfish
+```
+
+- **To build an userdebug build with gapps**
+```
+     blissify -u -g sunfish
+```
+
+- **To build an eng build with gapps**
+```
+     blissify -e -g sunfish
+```
+
+- **To build an user build with gapps**
+```
+     blissify -U -g sunfish
+```
+
+**This method is also backwards compatible with the legacy blissify command also**
+Default build type = userdebug
+Default build variant = vanilla
+```
+     blissify sunfish
 ```
 
 But what is `blissify`? It is a compact form of these commands:
 
 ```text
-breakfast bullhead
-lunch bliss_bullhead-userdebug
+breakfast sunfish
+lunch bliss_sunfish-userdebug
 make blissify
 ```
 
@@ -194,7 +246,7 @@ There are two outcomes to a build - either it fails and you get a red error mess
 If you face the latter, congratulations! You've successfully built BlissRoms for your device. Grab the artifacts for your device:
 
 ```text
-cd out/target/product/bullhead/
+cd out/target/product/sunfish/
 ```
 
-In here, you’ll find a `.zip` that goes along the lines of `Bliss-v11.9-Stable-bullhead-UNOFFICIAL-20190531.zip`. Install TWRP, flash the build to your device, and enjoy!
+In here, you’ll find a `.zip` that goes along the lines of `Bliss-v14.4-sunfish-UNOFFICIAL-vanilla-20210615.zip`. Install TWRP, flash the build to your device, and enjoy!
