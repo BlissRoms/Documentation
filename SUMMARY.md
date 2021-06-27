@@ -6,6 +6,7 @@
 
 * [Build BlissRoms](development/build-guide.md)
 * [Troubleshooting](development/troubleshoot.md)
+* [Conclusion](development/conclusion.md)
 
 ## Maintainers
 
