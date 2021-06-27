@@ -110,3 +110,18 @@ This overlay is required to add support for Multi USB Controller.
     <!-- Switch USB controller on Asus ROG devices-->
     <bool name="config_switchUsbController">true</bool>
 ```
+
+• Screen-Off FOD
+----------------
+
+```
+Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
+Default status: Disabled
+```
+
+This overlay is required to Enable Screen OFF FOD.
+
+```
+    <!-- Screen off FOD -->
+    <bool name="config_supportScreenOffFod">true</bool>
+```
