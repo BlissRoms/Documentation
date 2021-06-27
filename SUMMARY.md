@@ -9,3 +9,4 @@
 ## Maintainers
 
 * [Requirements](maintainers/requirements.md)
+* [Overlays](maintainers/blissrom-overlays.md)
