@@ -26,10 +26,12 @@ Note that nodes availability depends on kernel version
 
 Example
 -------
+```
 		<!-- Battery Health Info nodes -->
         <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
         <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
         <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+```
 
 • Charging Support Overlay
 ------------------------
@@ -83,12 +85,14 @@ This overlay is required to make Smart Charging feature functioning.
 
 Example
 -------
+```
     <!-- Smart charge sysfs node and value for suspend/resume charging-->
     <integer name="config_smartChargingBatteryLevel">80</integer>
     <integer name="config_smartChargingBatteryResumeLevel">60</integer>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+```
 
 • Multi usb controller overlay (ONLY FOR ASUS ROG DEVICES)
 ----------------
