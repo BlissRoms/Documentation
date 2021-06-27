@@ -4,7 +4,8 @@
 
 ## Development
 
-* [Build BlissRoms](build-blissrom/build-guide.md)
+* [Build BlissRoms](development/build-guide.md)
+* [Troubleshooting](development/troubleshoot.md)
 
 ## Maintainers
 
