@@ -8,7 +8,7 @@ Before you apply for maintainership to add your device to our official devices l
     - We may allow exceptions if a trusted friend owns the device and is willing to help test your builds. However, this will only be approved on a case-by-case basis.
     - Asking users to test blind builds is not allowed.
 
-2. You must know how to use git and Gerrit.
+2. You must have a working knowledge of Git and Gerrit.
 
 3. You must maintain said device unofficially for at least 1 month with constant updates. Make sure builds are stable for usage. Users should not report any significant problems with your build.
 
