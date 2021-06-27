@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Getting Started](README.md)
 
-## Build BlissRom
+## Development
 
 * [Build BlissRoms](build-blissrom/build-guide.md)
 
