@@ -111,6 +111,8 @@ This overlay is required to add support for Multi USB Controller.
     <bool name="config_switchUsbController">true</bool>
 ```
 
+## FOD Specific Overlays
+
 • Screen-Off FOD
 ----------------
 
