@@ -4,7 +4,7 @@
 
 ## Build BlissRom
 
-* [Build BlissRom](build-blissrom/build-guide.md)
+* [Build BlissRoms](build-blissrom/build-guide.md)
 
 ## Maintainers
 
