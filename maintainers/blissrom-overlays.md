@@ -24,8 +24,7 @@ You will need to check your available kernel nodes before selecting them
 Note that nodes availability depends on kernel version
 
 
-Example
--------
+**Example**
 ```
 		<!-- Battery Health Info nodes -->
         <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
@@ -83,8 +82,7 @@ This overlay is required to make Smart Charging feature functioning.
     <bool name="config_supportSmartFeatures">true</bool>
 ```
 
-Example
--------
+**Example**
 ```
     <!-- Smart charge sysfs node and value for suspend/resume charging-->
     <integer name="config_smartChargingBatteryLevel">80</integer>
