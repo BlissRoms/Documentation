@@ -109,6 +109,20 @@ This overlay is required to add support for Multi USB Controller.
     <bool name="config_switchUsbController">true</bool>
 ```
 
+• High Aspect Ratio
+------------------
+```
+Overlay Path: overlay/frameworks/base/core/res/res/values/config.xml
+Default status: Disabled
+```
+
+This overlay is required to make full screen apps function working properly
+
+```
+    <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+```
+
 ## FOD Specific Overlays
 
 • FOD Support
