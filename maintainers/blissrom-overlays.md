@@ -113,6 +113,21 @@ This overlay is required to add support for Multi USB Controller.
 
 ## FOD Specific Overlays
 
+• FOD Support
+----------------
+
+```
+Overlay Path: overlay/frameworks/base/core/res/res/values/config.xml
+Default status: Disabled
+```
+
+This overlay is required to Enable FOD Support. Required inorder for FOD to work.
+
+```
+    <!-- Whether to show a custom view for FOD -->
+    <bool name="config_needCustomFODView">true</bool>
+```
+
 • Screen-Off FOD
 ----------------
 
