@@ -11,4 +11,5 @@
 ## Maintainers
 
 * [Requirements](maintainers/requirements.md)
+* [Code of Conduct](maintainers/code_of_conduct.md)
 * [Overlays](maintainers/blissrom-overlays.md)
