@@ -3,21 +3,21 @@
 
 ```
 Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Enabled
+Default status: Disabled
 ```
 
-This overlay is required to disable battery health section if you could not find a reliable node in your kernel.
+This overlay is required to Enable battery health section.
 
 ```
 	<!-- Battery Health -->
-    <bool name="config_supportBatteryHealth">false</bool>
+    <bool name="config_supportBatteryHealth">true</bool>
 ```
 
-This overlay is required to disable battery charging cycle counts in battery page in setting app.
+This overlay is required to Enable battery charging cycle counts in battery page in setting app.
 
 ```
 	<!-- Battery Charging cycle counts -->
-    <bool name="config_supportBatteryHealth">false</bool>
+    <bool name="config_supportBatteryHealth">true</bool>
 ```
 
 You will need to check your available kernel nodes before selecting them
