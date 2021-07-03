@@ -129,7 +129,7 @@ This overlay is required to make full screen apps function working properly
 ----------------
 
 ```
-Overlay Path: configs/overlays/overlay/frameworks/base/core/res/res/values/bliss_config.xml
+Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
 Default status: Enabled
 ```
 
@@ -142,6 +142,30 @@ This overlay is required to Enable Multi-coloured LED lights for supported devic
          Used to decide if the user can change the colors -->
     <bool name="config_multicolorled">false</bool>
 ```
+
+• Call Recording
+----------------
+
+```
+Overlay Path: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml
+Default status: Disabled
+```
+
+{% hint style="info" %}
+This feature only works on AOSP Dialer and not on Google Dialer.
+{% endhint %}
+
+This overlay is required to Enable Call recording on AOSP Dialer's.
+
+```
+    <!-- Enable Call recording -->
+				 <bool name="call_recording_enabled">true</bool>
+		     <integer name="call_recording_audio_source">4</integer>
+```
+
+{% hint style="warning" %}
+Call recording is illegal in some countries. Hence kindly refer to local laws before enabling this feature!!
+{% endhint %}
 
 ## FOD Specific Overlays
 
