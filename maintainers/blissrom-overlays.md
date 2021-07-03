@@ -1,3 +1,5 @@
+## General Overlays
+
 • Battery Health Overlay
 ------------------------
 
@@ -123,6 +125,24 @@ This overlay is required to make full screen apps function working properly
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 ```
 
+• Multi-colour LED
+----------------
+
+```
+Overlay Path: configs/overlays/overlay/frameworks/base/core/res/res/values/bliss_config.xml
+Default status: Enabled
+```
+
+This overlay is required to Enable Multi-coloured LED lights for supported devices.
+
+**NOTE:** For most of the Xiaomi devices, this must be set to 'false' as they have white-only LEDs.
+
+```
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multicolorled">false</bool>
+```
+
 ## FOD Specific Overlays
 
 • FOD Support
@@ -179,22 +199,4 @@ This overlay is required to Enable Screen OFF FOD.
 ```
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">true</bool>
-```
-
-• Multi-colour LED
-----------------
-
-```
-Overlay Path: configs/overlays/overlay/frameworks/base/core/res/res/values/bliss_config.xml
-Default status: Enabled
-```
-
-This overlay is required to Enable Multi-coloured LED lights for supported devices.
-
-**NOTE:** For most of the Xiaomi devices, this must be set to 'false' as they have white-only LEDs.
-
-```
-    <!-- Does the notification LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multicolorled">false</bool>
 ```
