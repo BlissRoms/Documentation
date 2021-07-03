@@ -145,15 +145,14 @@ This overlay is required to Enable Multi-coloured LED lights for supported devic
 
 • Call Recording
 ----------------
+{% hint style="info" %}
+This feature only works on AOSP Dialer and not on Google Dialer.
+{% endhint %}
 
 ```
 Overlay Path: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml
 Default status: Disabled
 ```
-
-{% hint style="info" %}
-This feature only works on AOSP Dialer and not on Google Dialer.
-{% endhint %}
 
 This overlay is required to Enable Call recording on AOSP Dialer's.
 
@@ -164,7 +163,7 @@ This overlay is required to Enable Call recording on AOSP Dialer's.
 ```
 
 {% hint style="warning" %}
-Call recording is illegal in some countries. Hence kindly refer to local laws before enabling this feature!!
+Call recording is illegal in some countries. Kindly refer to local laws before enabling this feature!!
 {% endhint %}
 
 ## FOD Specific Overlays
