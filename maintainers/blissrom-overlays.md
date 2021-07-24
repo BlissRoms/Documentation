@@ -19,7 +19,7 @@ This overlay is required to Enable battery charging cycle counts in battery page
 
 ```
 	<!-- Battery Charging cycle counts -->
-    <bool name="config_supportBatteryHealth">true</bool>
+    <bool name="config_showChargingCycles">true</bool>
 ```
 
 You will need to check your available kernel nodes before selecting them
