@@ -135,7 +135,9 @@ Default status: Enabled
 
 This overlay is required to Enable Multi-coloured LED lights for supported devices.
 
-**NOTE:** For most of the Xiaomi devices, this must be set to 'false' as they have white-only LEDs.
+{% hint style="info" %}
+ For most of the Xiaomi devices, this must be set to 'false' as they have white-only LEDs.
+{% endhint %}
 
 ```
     <!-- Does the notification LED support multiple colors?
@@ -157,9 +159,9 @@ Default status: Disabled
 This overlay is required to Enable Call recording on AOSP Dialer's.
 
 ```
-    <!-- Enable Call recording -->
-				 <bool name="call_recording_enabled">true</bool>
-		     <integer name="call_recording_audio_source">4</integer>
+	<!-- Enable Call recording -->
+	<bool name="call_recording_enabled">true</bool>
+	<integer name="call_recording_audio_source">4</integer>
 ```
 
 {% hint style="warning" %}
@@ -172,7 +174,7 @@ Call recording is illegal in some countries. Kindly refer to local laws before e
 ----------------
 
 ```
-Overlay Path: overlay/frameworks/base/core/res/res/values/config.xml
+Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
 Default status: Disabled
 ```
 
@@ -198,7 +200,7 @@ TARGET_WANTS_FOD_ANIMATIONS := true
 
 **To set Default FOD Pressed color**
 ```
-Overlay Path: overlay/frameworks/base/core/res/res/values/config.xml
+Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
 Default status: Disabled
 ```
 
