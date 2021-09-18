@@ -94,6 +94,21 @@ This overlay is required to make Smart Charging feature functioning.
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
 ```
 
+• Live Display
+----------------
+
+```
+Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
+Default status: Disabled
+```
+
+This overlay is required to make Live Display feature functioning.
+
+```
+    <!-- Default state for LiveDisplay -->
+    <bool name="config_enableLiveDisplay">true</bool>
+```
+
 • Multi usb controller overlay (ONLY FOR ASUS ROG DEVICES)
 ----------------
 
