@@ -1,5 +1,5 @@
 ---
-description: Documentation for BlissRom
+label: Welcome
+icon: home
 ---
-
-# Getting Started
+# Welcome to BlissRoms
