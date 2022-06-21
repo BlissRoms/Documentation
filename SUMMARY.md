@@ -2,11 +2,11 @@
 
 * [Getting Started](README.md)
 
-## Development
+## Guides
 
-* [Build BlissRoms](development/build-guide.md)
-* [Troubleshooting](development/troubleshoot.md)
-* [Conclusion](development/conclusion.md)
+* [Build BlissRoms](guides/build-guide.md)
+* [Troubleshooting](guides/troubleshoot.md)
+* [Conclusion](guides/conclusion.md)
 
 ## Maintainers
 
