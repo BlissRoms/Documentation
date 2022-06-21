@@ -18,3 +18,4 @@ icon: home
 - [x] [Reddit](https://www.reddit.com/r/BlissRoms)
 - [x] [Github](https://github.com/BlissRoms)
 - [x] [Gerrit Code Review](https://review.blissroms.org)
+- [x] [Help us to Translate](https://translate.blissroms.org)
