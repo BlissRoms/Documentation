@@ -22,7 +22,10 @@ links:
     icon: home
 
 footer:
-  copyright: © Copyright {{ year }} – [BlissLabs](https://blisslabs.org/) – All rights reserved
+  copyright: © Copyright 2013-{{ year }} – [BlissLabs](https://blisslabs.org) – All rights reserved
+  links:
+    - text: A BlissLabs Project
+      link: https://blisslabs.org
 
 integrations:
   googleAnalytics:
