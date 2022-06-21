@@ -1,0 +1,29 @@
+input: ./
+output: ./docs
+url: docs.blissroms.org
+
+branding:
+  title: BlissRoms
+  label: Docs
+
+meta:
+  title: " - BlissRoms Docs"
+
+edit:
+  repo: https://github.com/BlissRoms/Documentation
+  label: Edit on GitHub
+
+editor:
+  enabled: false
+
+links:
+  - text: Home
+    link: /README.md
+    icon: home
+
+footer:
+  copyright: © Copyright {{ year }} – [BlissLabs](https://blisslabs.org/) – All rights reserved
+
+integrations:
+  googleAnalytics:
+    id: 
