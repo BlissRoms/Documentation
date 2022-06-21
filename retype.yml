@@ -1,5 +1,5 @@
 input: ./
-output: ./docs
+output: .docs
 url: docs.blissroms.org
 
 branding:

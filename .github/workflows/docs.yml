@@ -18,4 +18,5 @@ jobs:
 
       - uses: retypeapp/action-github-pages@latest
         with:
+          branch: docs
           update-branch: true
