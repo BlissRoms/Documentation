@@ -4,6 +4,8 @@ icon: home
 ---
 # Welcome to BlissRoms
 
+![](static/banner.jpg)
+
 [BlissRoms](https://blissroms.org/) is an open-source operating system based on Android with customizations, options and added security features. Our prime aim is to provide a blissful experience to our users.
 
 ---
