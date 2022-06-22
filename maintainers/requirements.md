@@ -1,4 +1,4 @@
-# BlissRoms Maintainer Requirements
+# Requirements
 
 Before you apply for maintainership to add your device to our official devices list, please read the following requirements carefully.
 
