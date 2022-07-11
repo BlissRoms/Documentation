@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers. We will not delve into porting devices.
+This is the official guide to build BlissRom for your device. In this guide, We will only cover official devices with actual maintainers. We will not deeply dive into porting devices.
 
-The golden rule to building is patience. If something breaks, wait for your maintainer to fix it, send a polite message to your maintainer, or better yet, try and fix it yourself. Then you can make a merge request and contribute!
+The golden rule for building a ROM is utmost patience. If something breaks, wait for your maintainer to fix it, send a polite message to your maintainer, or better yet, try and fix it yourself. Then you can make a merge request and contribute!
 
-Let’s get started.
+So, Let’s get started.
 
 ## Preparation
 
-To get started, you need a computer with Ubuntu 18.04 \(LTS\), at least 200GB space of HDD, and at least 8GB RAM. A decent CPU \(or CPUs if you have a server motherboard\) is recommended. Other distros can work but is not officially supported in this guide.
+To get started, you need a computer with Ubuntu 18.04 or newer \(LTS\), at least 200GB space of HDD/SSD, and at least 8GB RAM. A decent CPU \(or CPUs if you have a server motherboard\) is recommended. Other distros can work but is not officially supported in this guide.
 
 Underpowered machines may crash during compilation. If that happens, you may try and restart the build as most crashes are caused by lack of memory. If your storage space has run out, then you will need to build on a different hard drive.
 
@@ -249,4 +249,8 @@ If you face the latter, congratulations! You've successfully built BlissRoms for
 cd out/target/product/sunfish/
 ```
 
-In here, you’ll find a `.zip` that goes along the lines of `Bliss-v14.4-sunfish-UNOFFICIAL-vanilla-20210615.zip`. Install TWRP, flash the build to your device, and enjoy!
+In here, you’ll find a `.zip` file that goes along the format of `Bliss-vxx.xx-sunfish-UNOFFICIAL-vanilla-202xxxxx.zip`. Install custom recovery of your choice, then flash the build to your device.
+Bliss 14.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 11.
+Bliss 15.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 12/12.1.
+
+There you go, you have succesfully built BlissROMs. Happy Flashing and Enjoy!
