@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.710909996683">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.710910015626">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.3.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.3.0.710909996683" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.3.0.710910015626" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.710909996683" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.710910015626" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.710909996683" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.710910015626" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -401,67 +401,6 @@ Default status: Disabled</code></pre>
         </div>
     </div>
 </div>
-<doc-anchor-target id="fod-specific-overlays">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fod-specific-overlays">#</doc-anchor-trigger>
-        <span>FOD Specific Overlays</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="-fod-support">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-fod-support">#</doc-anchor-trigger>
-        <span>• FOD Support</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to Enable FOD Support. Required inorder for FOD to work.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Whether to show a custom view for FOD --&gt;
-    &lt;bool name=&quot;config_needCustomFODView&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="-fod-animations">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-fod-animations">#</doc-anchor-trigger>
-        <span>• FOD Animations</span>
-    </h2>
-</doc-anchor-target>
-<p>For FOD Animation to work you need 2 things in your device tree source.</p>
-<ul>
-<li>A Flag in bliss_codename.mk makefile in your respective device tree</li>
-<li>An overlay to set Default FOD Pressed Color</li>
-</ul>
-<p><strong>Flag Required to build FOD Animation resources</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">TARGET_WANTS_FOD_ANIMATIONS := true</code></pre>
-</doc-codeblock></div>
-<p><strong>To set Default FOD Pressed color</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay/frameworks/base/core/res/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to set Default FOD Pressed Color.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Default fod pressed color --&gt;
-    &lt;integer name=&quot;config_fod_pressed_color&quot;&gt;1&lt;/integer&gt;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="-screen-off-fod">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-screen-off-fod">#</doc-anchor-trigger>
-        <span>• Screen-Off FOD</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to Enable Screen OFF FOD.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Screen off FOD --&gt;
-    &lt;bool name=&quot;config_supportScreenOffFod&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
