@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.709214422966">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.710909996683">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.3.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Build BlissRom - BlissRoms Docs</title>
     <meta name="title" content="Build BlissRom - BlissRoms Docs">
-    <meta name="description" content="This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers." />
+    <meta name="description" content="This is the official guide to build BlissRom for your device. In this guide, We will only cover official devices with actual maintainers." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.blissroms.org/guides/build-guide/" />
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.blissroms.org/guides/build-guide/">
     <meta property="og:title" content="Build BlissRom - BlissRoms Docs">
-    <meta property="og:description" content="This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers.">
+    <meta property="og:description" content="This is the official guide to build BlissRom for your device. In this guide, We will only cover official devices with actual maintainers.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.blissroms.org/guides/build-guide/">
     <meta property="twitter:title" content="Build BlissRom - BlissRoms Docs">
-    <meta property="twitter:description" content="This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers.">
+    <meta property="twitter:description" content="This is the official guide to build BlissRom for your device. In this guide, We will only cover official devices with actual maintainers.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.3.0.709214422966" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.3.0.710909996683" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.709214422966" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.710909996683" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.709214422966" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.710909996683" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -192,16 +192,16 @@
         <span>Introduction</span>
     </h2>
 </doc-anchor-target>
-<p>This is the official guide to build BlissRom for your device. In this guide, we will only cover official devices with actual maintainers. We will not delve into porting devices.</p>
-<p>The golden rule to building is patience. If something breaks, wait for your maintainer to fix it, send a polite message to your maintainer, or better yet, try and fix it yourself. Then you can make a merge request and contribute!</p>
-<p>Let’s get started.</p>
+<p>This is the official guide to build BlissRom for your device. In this guide, We will only cover official devices with actual maintainers. We will not deeply dive into porting devices.</p>
+<p>The golden rule for building a ROM is utmost patience. If something breaks, wait for your maintainer to fix it, send a polite message to your maintainer, or better yet, try and fix it yourself. Then you can make a merge request and contribute!</p>
+<p>So, Let’s get started.</p>
 <doc-anchor-target id="preparation">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#preparation">#</doc-anchor-trigger>
         <span>Preparation</span>
     </h2>
 </doc-anchor-target>
-<p>To get started, you need a computer with Ubuntu 18.04 (LTS), at least 200GB space of HDD, and at least 8GB RAM. A decent CPU (or CPUs if you have a server motherboard) is recommended. Other distros can work but is not officially supported in this guide.</p>
+<p>To get started, you need a computer with Ubuntu 18.04 or newer (LTS), at least 200GB space of HDD/SSD, and at least 8GB RAM. A decent CPU (or CPUs if you have a server motherboard) is recommended. Other distros can work but is not officially supported in this guide.</p>
 <p>Underpowered machines may crash during compilation. If that happens, you may try and restart the build as most crashes are caused by lack of memory. If your storage space has run out, then you will need to build on a different hard drive.</p>
 <doc-anchor-target id="install-the-jdk">
     <h3>
@@ -422,7 +422,10 @@ make blissify</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">cd out/target/product/sunfish/</code></pre>
 </doc-codeblock></div>
-<p>In here, you’ll find a <code v-pre>.zip</code> that goes along the lines of <code v-pre>Bliss-v14.4-sunfish-UNOFFICIAL-vanilla-20210615.zip</code>. Install TWRP, flash the build to your device, and enjoy!</p>
+<p>In here, you’ll find a <code v-pre>.zip</code> file that goes along the format of <code v-pre>Bliss-vxx.xx-sunfish-UNOFFICIAL-vanilla-202xxxxx.zip</code>. Install custom recovery of your choice, then flash the build to your device.
+Bliss 14.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 11.
+Bliss 15.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 12/12.1.</p>
+<p>There you go, you have succesfully built BlissROMs. Happy Flashing and Enjoy!</p>
 
                                 
                                 <!-- Required only on API pages -->
