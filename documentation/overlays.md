@@ -251,9 +251,29 @@ Overlay Path: overlay-bliss/frameworks/base/packages/SystemUI/res/values/dimens.
 
 This overlay is required to set UDFPS Animation offset for respective devices.
 
+{% hint style="info" %}
+Adjust this value as per your device.
+{% endhint %}
+
 ```
-    <!-- Udfps animation -->
+    <!-- Udfps animation offset -->
     <dimen name="udfps_animation_offset">50dp</dimen>
+```
+
+**To set UDFPS Animation Size**
+```
+Overlay Path: overlay-bliss/frameworks/base/packages/SystemUI/res/values/dimens.xml
+```
+
+This overlay is required to set UDFPS Animation size for respective devices.
+
+{% hint style="info" %}
+Adjust this value as per your device.
+{% endhint %}
+
+```
+    <!-- Udfps animation size-->
+    <dimen name="udfps_animation_size">176dp</dimen>
 ```
 
 **To set Color of the UDFPS Pressed view**
