@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.717010136975">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722280329728">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.717010136975" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.722280329728" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.717010136975" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722280329728" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.717010136975" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722280329728" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -275,8 +275,8 @@ export PATH=~/bin:$PATH</code></pre>
 </doc-anchor-target>
 <p>Create a directory for the source:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">mkdir -p ~/bliss/arcadia-next
-cd ~/bliss/arcadia-next</code></pre>
+<pre class="language-none"><code v-pre class="language-none">mkdir -p ~/bliss/typhoon
+cd ~/bliss/typhoon</code></pre>
 </doc-codeblock></div>
 <p>Before we download, we need to tell <code v-pre>repo</code> and <code v-pre>git</code> who we are. Run the following commands, substituting your information:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -285,7 +285,7 @@ git config --global user.name &quot;John Appleseed&quot;</code></pre>
 </doc-codeblock></div>
 <p>Now, we’re ready to initialize. We need to tell <code v-pre>repo</code> which manifest to read:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">repo init -u https://github.com/BlissRoms/platform_manifest.git -b r</code></pre>
+<pre class="language-none"><code v-pre class="language-none">repo init -u https://github.com/BlissRoms/platform_manifest.git -b typhoon</code></pre>
 </doc-codeblock></div>
 <p><code v-pre>-b</code> is for the branch, and we’re on <code v-pre>arcadia-next</code>, Android 12L. It’ll take a couple of seconds. You may need to type <code v-pre>y</code> for the color prompt.</p>
 <p>Then sync the source:</p>
@@ -424,7 +424,8 @@ make blissify</code></pre>
 </doc-codeblock></div>
 <p>In here, you’ll find a <code v-pre>.zip</code> file that goes along the format of <code v-pre>Bliss-vxx.xx-sunfish-UNOFFICIAL-vanilla-202xxxxx.zip</code>. Install custom recovery of your choice, then flash the build to your device.
 Bliss 14.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 11.
-Bliss 15.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 12/12.1.</p>
+Bliss 15.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 12/12.1.
+Bliss 16.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 13.</p>
 <p>There you go, you have succesfully built BlissROMs. Happy Flashing and Enjoy!</p>
 
                                 
