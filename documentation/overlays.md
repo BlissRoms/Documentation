@@ -157,7 +157,7 @@ This overlay is required to Enable Multi-coloured LED lights for supported devic
 ```
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multicolorled">false</bool>
+    <bool name="config_multiColorBatteryLed">false</bool>
 ```
 
 • Call Recording
@@ -301,4 +301,19 @@ This overlay is required to Enable Screen OFF FOD.
 ```
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">true</bool>
+```
+
+• Refresh Rate Overlays
+----------------
+
+```
+Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
+Default status: Disabled
+```
+
+This overlay is required to Enable Refresh Rate Controls.
+
+```
+    <!-- Show refresh rate controls -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
 ```
