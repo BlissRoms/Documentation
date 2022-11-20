@@ -88,8 +88,8 @@ But why do you need to run it after modifying a file? Well, `bash` cannot automa
 Create a directory for the source:
 
 ```text
-mkdir -p ~/bliss/arcadia-next
-cd ~/bliss/arcadia-next
+mkdir -p ~/bliss/typhoon
+cd ~/bliss/typhoon
 ```
 
 Before we download, we need to tell `repo` and `git` who we are. Run the following commands, substituting your information:
@@ -102,7 +102,7 @@ git config --global user.name "John Appleseed"
 Now, we’re ready to initialize. We need to tell `repo` which manifest to read:
 
 ```text
-repo init -u https://github.com/BlissRoms/platform_manifest.git -b r
+repo init -u https://github.com/BlissRoms/platform_manifest.git -b typhoon
 ```
 
 `-b` is for the branch, and we’re on `arcadia-next`, Android 12L. It’ll take a couple of seconds. You may need to type `y` for the color prompt.
@@ -252,5 +252,6 @@ cd out/target/product/sunfish/
 In here, you’ll find a `.zip` file that goes along the format of `Bliss-vxx.xx-sunfish-UNOFFICIAL-vanilla-202xxxxx.zip`. Install custom recovery of your choice, then flash the build to your device.
 Bliss 14.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 11.
 Bliss 15.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 12/12.1.
+Bliss 16.xx versions indicate that you have succesfully built BlissROMs for your device based on Android 13.
 
 There you go, you have succesfully built BlissROMs. Happy Flashing and Enjoy!
