@@ -1,38 +1,19 @@
 ## General Overlays
 
-• Battery Health Overlay
-------------------------
+• Refresh Rate Overlays
+----------------
 
 ```
 Overlay Path: overlay-bliss/packages/apps/Settings/res/values/bliss_config.xml
 Default status: Disabled
 ```
 
-This overlay is required to Enable battery health section.
+This overlay is required to Enable Refresh Rate Controls.
 
 ```
-	<!-- Battery Health -->
-    <bool name="config_supportBatteryHealth">true</bool>
-```
-
-This overlay is required to Enable battery charging cycle counts in battery page in setting app.
-
-```
-	<!-- Battery Charging cycle counts -->
-    <bool name="config_showChargingCycles">true</bool>
-```
-
-You will need to check your available kernel nodes before selecting them
-Note that nodes availability depends on kernel version
-
-
-**Example**
-```
-		<!-- Battery Health Info nodes -->
-        <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-        <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
-        <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-```
+    <!-- Show refresh rate controls -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
+```		
 
 • Charging Support Overlay
 ------------------------
@@ -69,46 +50,6 @@ This overlay is required to Enable **Dash charging support**.
     <bool name="config_hasDashCharger">true</bool>
 ```
 
-• Smart Charging
-----------------
-
-```
-Overlay Path: overlay-bliss/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Disabled
-```
-
-This overlay is required to make Smart Charging feature functioning.
-
-```
-    <!-- Smart Charging -->
-    <bool name="config_supportSmartFeatures">true</bool>
-```
-
-**Example**
-```
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <integer name="config_smartChargingBatteryLevel">80</integer>
-    <integer name="config_smartChargingBatteryResumeLevel">60</integer>
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
-    <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
-```
-
-• Live Display
-----------------
-
-```
-Overlay Path: overlay-bliss/frameworks/base/core/res/res/values/bliss_config.xml
-Default status: Disabled
-```
-
-This overlay is required to make Live Display feature functioning.
-
-```
-    <!-- Default state for LiveDisplay -->
-    <bool name="config_enableLiveDisplay">true</bool>
-```
-
 • Multi usb controller overlay (ONLY FOR ASUS ROG DEVICES)
 ----------------
 
@@ -124,20 +65,6 @@ This overlay is required to add support for Multi USB Controller.
 ```
     <!-- Switch USB controller on Asus ROG devices-->
     <bool name="config_switchUsbController">true</bool>
-```
-
-• High Aspect Ratio
-------------------
-```
-Overlay Path: overlay-bliss/frameworks/base/core/res/res/values/config.xml
-Default status: Disabled
-```
-
-This overlay is required to make full screen apps function working properly
-
-```
-    <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 ```
 
 • Multi-colour LED
@@ -303,17 +230,3 @@ This overlay is required to Enable Screen OFF FOD.
     <bool name="config_supportScreenOffFod">true</bool>
 ```
 
-• Refresh Rate Overlays
-----------------
-
-```
-Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Disabled
-```
-
-This overlay is required to Enable Refresh Rate Controls.
-
-```
-    <!-- Show refresh rate controls -->
-    <bool name="config_show_refresh_rate_controls">true</bool>
-```
