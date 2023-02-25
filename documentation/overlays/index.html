@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722280329728">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.730633824517">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Overlays - BlissRoms Docs</title>
     <meta name="title" content="Overlays - BlissRoms Docs">
-    <meta name="description" content="This overlay is required to Enable battery health section." />
+    <meta name="description" content="This overlay is required to Enable Refresh Rate Controls." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.blissroms.org/documentation/overlays/" />
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.blissroms.org/documentation/overlays/">
     <meta property="og:title" content="Overlays - BlissRoms Docs">
-    <meta property="og:description" content="This overlay is required to Enable battery health section.">
+    <meta property="og:description" content="This overlay is required to Enable Refresh Rate Controls.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.blissroms.org/documentation/overlays/">
     <meta property="twitter:title" content="Overlays - BlissRoms Docs">
-    <meta property="twitter:description" content="This overlay is required to Enable battery health section.">
+    <meta property="twitter:description" content="This overlay is required to Enable Refresh Rate Controls.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.722280329728" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.730633824517" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722280329728" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.730633824517" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722280329728" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.730633824517" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -192,34 +192,20 @@
         <span>General Overlays</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="-battery-health-overlay">
+<doc-anchor-target id="-refresh-rate-overlays">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-battery-health-overlay">#</doc-anchor-trigger>
-        <span>• Battery Health Overlay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-refresh-rate-overlays">#</doc-anchor-trigger>
+        <span>• Refresh Rate Overlays</span>
     </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay-bliss/packages/apps/Settings/res/values/bliss_config.xml
 Default status: Disabled</code></pre>
 </doc-codeblock></div>
-<p>This overlay is required to Enable battery health section.</p>
+<p>This overlay is required to Enable Refresh Rate Controls.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">	&lt;!-- Battery Health --&gt;
-    &lt;bool name=&quot;config_supportBatteryHealth&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to Enable battery charging cycle counts in battery page in setting app.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">	&lt;!-- Battery Charging cycle counts --&gt;
-    &lt;bool name=&quot;config_showChargingCycles&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
-<p>You will need to check your available kernel nodes before selecting them
-Note that nodes availability depends on kernel version</p>
-<p><strong>Example</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">		&lt;!-- Battery Health Info nodes --&gt;
-        &lt;string name=&quot;config_batDesCap&quot;&gt;/sys/class/power_supply/bms/charge_full_design&lt;/string&gt;
-        &lt;string name=&quot;config_batCurCap&quot;&gt;/sys/class/power_supply/bms/charge_now_raw&lt;/string&gt;
-        &lt;string name=&quot;config_batChargeCycle&quot;&gt;/sys/class/power_supply/bms/cycle_count&lt;/string&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Show refresh rate controls --&gt;
+    &lt;bool name=&quot;config_show_refresh_rate_controls&quot;&gt;true&lt;/bool&gt;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="-charging-support-overlay">
     <h2>
@@ -249,45 +235,6 @@ Default status: Disabled</code></pre>
 <pre class="language-none"><code v-pre class="language-none">    &lt;!-- Whether device has dash charging support --&gt;
     &lt;bool name=&quot;config_hasDashCharger&quot;&gt;true&lt;/bool&gt;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="-smart-charging">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-smart-charging">#</doc-anchor-trigger>
-        <span>• Smart Charging</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay-bliss/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to make Smart Charging feature functioning.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Smart Charging --&gt;
-    &lt;bool name=&quot;config_supportSmartFeatures&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
-<p><strong>Example</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Smart charge sysfs node and value for suspend/resume charging--&gt;
-    &lt;integer name=&quot;config_smartChargingBatteryLevel&quot;&gt;80&lt;/integer&gt;
-    &lt;integer name=&quot;config_smartChargingBatteryResumeLevel&quot;&gt;60&lt;/integer&gt;
-    &lt;string name=&quot;config_SmartChargingSysfsNode&quot; translatable=&quot;false&quot;&gt;/sys/class/power_supply/battery/charging_enabled&lt;/string&gt;
-    &lt;string name=&quot;config_SmartChargingSuspendValue&quot; translatable=&quot;false&quot;&gt;0&lt;/string&gt;
-    &lt;string name=&quot;config_SmartChargingResumeValue&quot; translatable=&quot;false&quot;&gt;1&lt;/string&gt;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="-live-display">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-live-display">#</doc-anchor-trigger>
-        <span>• Live Display</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay-bliss/frameworks/base/core/res/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to make Live Display feature functioning.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Default state for LiveDisplay --&gt;
-    &lt;bool name=&quot;config_enableLiveDisplay&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
 <doc-anchor-target id="-multi-usb-controller-overlay-only-for-asus-rog-devices">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#-multi-usb-controller-overlay-only-for-asus-rog-devices">#</doc-anchor-trigger>
@@ -303,21 +250,6 @@ Default status: Disabled</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">    &lt;!-- Switch USB controller on Asus ROG devices--&gt;
     &lt;bool name=&quot;config_switchUsbController&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="-high-aspect-ratio">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-high-aspect-ratio">#</doc-anchor-trigger>
-        <span>• High Aspect Ratio</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay-bliss/frameworks/base/core/res/res/values/config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to make full screen apps function working properly</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Define that we use a higher screen ratio (18:9) than standard (16:9) --&gt;
-    &lt;bool name=&quot;config_haveHigherAspectRatioScreen&quot;&gt;true&lt;/bool&gt;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="-multi-colour-led">
     <h2>
@@ -540,21 +472,6 @@ Default status: Disabled</code></pre>
 <pre class="language-none"><code v-pre class="language-none">    &lt;!-- Screen off FOD --&gt;
     &lt;bool name=&quot;config_supportScreenOffFod&quot;&gt;true&lt;/bool&gt;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="-refresh-rate-overlays">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#-refresh-rate-overlays">#</doc-anchor-trigger>
-        <span>• Refresh Rate Overlays</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Overlay Path: overlay/packages/apps/Settings/res/values/bliss_config.xml
-Default status: Disabled</code></pre>
-</doc-codeblock></div>
-<p>This overlay is required to Enable Refresh Rate Controls.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">    &lt;!-- Show refresh rate controls --&gt;
-    &lt;bool name=&quot;config_show_refresh_rate_controls&quot;&gt;true&lt;/bool&gt;</code></pre>
-</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -601,7 +518,7 @@ Default status: Disabled</code></pre>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2013-2022 – <a href="https://blisslabs.org">BlissLabs</a> – All rights reserved</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2013-2023 – <a href="https://blisslabs.org">BlissLabs</a> – All rights reserved</p></div>
                             </footer>
                         </div>
                     </div>
