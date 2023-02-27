@@ -105,7 +105,7 @@ Now, we’re ready to initialize. We need to tell `repo` which manifest to read:
 repo init -u https://github.com/BlissRoms/platform_manifest.git -b typhoon
 ```
 
-`-b` is for the branch, and we’re on `arcadia-next`, Android 12L. It’ll take a couple of seconds. You may need to type `y` for the color prompt.
+`-b` is for the branch, and we’re on `typhoon`, Android 13. It’ll take a couple of seconds. You may need to type `y` for the color prompt.
 
 Then sync the source:
 
