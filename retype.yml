@@ -12,6 +12,7 @@ meta:
 edit:
   repo: https://github.com/BlissRoms/Documentation
   label: Edit on GitHub
+  branch: master
 
 editor:
   enabled: false
