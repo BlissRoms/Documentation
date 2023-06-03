@@ -1,4 +1,7 @@
-# BlissRoms Code of Conduct
+---
+icon: code-of-conduct
+---
+# Code of Conduct
 
 ## Introduction
 
