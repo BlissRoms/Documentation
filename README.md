@@ -3,7 +3,7 @@
 
 ![](static/banner.jpg)
 
-[BlissRoms](https://blissroms.org/) is an open-source operating system based on Android with customizations, options and added security features. Our prime aim is to provide a blissful experience to our users.
+[BlissRoms](https://blissroms.org/), an enchanting open-source operating system built upon the AOSP, offers a harmonious blend of boundless customization, unparalleled options, and fortified security features. With an unwavering commitment to delivering pure bliss to its users, it unveils a captivating world of limitless possibilities.
 
 ---
 
