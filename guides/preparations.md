@@ -1,4 +1,8 @@
-# Build BlissRoms
+---
+order: 49
+tags: [guide]
+---
+# Preparations
 
 ## System requirements for building BlissRoms
 
@@ -11,7 +15,9 @@ Before you begin building BlissRoms, ensure that your system meets the following
 
 While other Linux distributions may work, this guide specifically focuses on Ubuntu, which is officially supported for building BlissRoms.
 
-Please note the following considerations:
+!!!
+Please note the following considerations
+!!!
 
 - Underpowered machines may experience crashes during compilation due to resource limitations. If you encounter crashes, try restarting the build process as most issues are caused by insufficient memory.
 - If your storage space is running low, you may need to build on a different hard drive with sufficient space.
