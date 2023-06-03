@@ -1,33 +1,54 @@
-# Code of Conduct
+# BlissRoms Code of Conduct
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+## Introduction
 
-The Maintainers:
+BlissRoms is an open-source project dedicated to developing and enhancing the Android operating system. As a community-driven project, we value the participation of individuals from all backgrounds and experiences. This Code of Conduct outlines our expectations for behavior and serves as a guide for fostering a positive and inclusive environment for all participants.
 
-- **MUST NOT** get involved in arguments or resort to insults, or use hateful words, personal attacks or any other verbal or nonverbal action that is considered detrimental towards the creation of a positive environment for the team.  
+## Purpose
 
-- **MUST** upload:
+The purpose of this Code of Conduct is to ensure a safe, respectful, and inclusive community where individuals can collaborate and contribute to the BlissRoms project. This includes developers, contributors, users, and anyone interacting with the project in any capacity.
 
-  - All theirs device sources on [BlissRoms-Devices](https://github.com/BlissRoms-Devices) organization. It goes without saying that these should be fully buildable. Using external repos for build releases aren't allowed, unless they're from LineageOS/TheMuppets organization(s). Exceptions may be open if only it's absolutely necessary.
+## Expected Behavior
 
-- **MUST** test every build before sending an OTA update to users. Each build must be thoroughly vetted by the maintainer before it is released, and all hardware and software functionalities MUST be tested before a build is released. Releasing untested builds can (and will) lead to your maintainership being revoked.
+All participants involved in the BlissRoms project are expected to:
 
-- **MUST** ship the BlissRoms Updates atleast once a month or as notified by BlissRoms Administration. If this is not possible, the reason(s) must be sent to the BlissRoms Administration within 48hrs. In the absence of any explanation, a maintainer will be contacted thrice. If there is no satisfactory answer or the administration does not receive a reply, the maintainer will be kicked without any prior warning.
+1. **Be respectful:** Treat others with respect, kindness, and empathy, regardless of their background, experience, or opinion.
+2. **Maintain a welcoming environment:** Foster an inclusive community where everyone feels welcome and valued, regardless of gender, sexual orientation, race, ethnicity, nationality, religion, or any other personal characteristic.
+3. **Exercise empathy:** Strive to understand and empathize with others' perspectives, experiences, and cultural differences.
+4. **Be collaborative:** Encourage and support fellow participants by sharing knowledge, ideas, and constructive feedback.
+5. **Practice patience and understanding:** Recognize that people have diverse skill levels, backgrounds, and time constraints. Be patient and understanding while helping others and resolving conflicts.
+6. **Use inclusive language:** Be mindful of the words and language used. Avoid offensive or discriminatory language, jokes, or any form of harassment.
+7. **Respect personal boundaries:** Be mindful of personal boundaries, consent, and privacy. Obtain explicit permission before sharing personal information or engaging in private conversations.
+8. **Follow the project's guidelines:** Adhere to the project's technical guidelines, contribution processes, and other policies as defined by the BlissRoms project.
 
-- **MUST** maintain authorship of git commits that are pushed, this is a mandatory requirement for ALL repositories. Force-pushes are acceptable, but try to keep them to a minimum.
+## Unacceptable Behavior
 
-- In the event of any disagreements between maintainers, sort them out via direct messages on Telegram or XDA. Do not take your fights to our chats, approach the administration if you want something sorted out quickly. The same is valid for our public chat.
+The following behaviors are considered unacceptable and will not be tolerated within the BlissRoms project:
 
-- **MUST NOT** add:
+1. **Harassment and discrimination:** Engaging in any form of harassment, discrimination, or offensive behavior, including but not limited to verbal, written, physical, or sexual harassment.
+2. **Bullying and intimidation:** Intimidating, bullying, or making derogatory or demeaning remarks towards others.
+3. **Trolling and flame wars:** Engaging in disruptive, disrespectful, or inflammatory discussions or comments.
+4. **Doxxing and privacy violations:** Sharing personal information or violating someone's privacy without their explicit consent.
+5. **Spamming and excessive self-promotion:** Posting irrelevant or excessive content, self-promotion, or advertisements.
+6. **Unauthorized access or sharing of proprietary information:** Accessing, distributing, or sharing proprietary or confidential information without proper authorization.
+7. **Violation of intellectual property rights:** Infringing on copyright, trademark, or other intellectual property rights of the BlissRoms project or any other party.
 
-  - Any Apps that are not shipped with BlissRoms. This includes Browsers and other apps.
+## Consequences of Violation
 
-  - Any stock firmware apps. Only Google Camera and camera app from stock firmware is allowed only if its fully functional.
+Failure to comply with this Code of Conduct may result in consequences, including but not limited to:
 
-- About Sepolicy Rules, the maintainers **MUST NOT**:
+1. **Warning and education:** The individual may receive a private warning and be educated about the violation and its impact on the community.
+2. **Temporary or permanent suspension:** In severe cases or repeated violations, the individual may be temporarily or permanently suspended from participating in the BlissRoms project.
+3. **Banishment:** In extreme cases or for egregious violations, the individual may be banned permanently from all BlissRoms project spaces and platforms.
 
-  - Ignore Sepolicy Neverallows.
+## Reporting and Enforcement
 
-  - Allow write access to generic directory/file/prop labels (With some exceptions).
+If you witness or experience any behavior that violates this Code of Conduct, please report it immediately to the project moderators or administrators. You can report incidents by contacting the following individuals [insert contact information or links to reporting channels].
 
-If any of these rules are broken, the administration will take direct action against the maintainer without prior warning.
+All reports will be taken seriously and treated with confidentiality. The project moderators or administrators will review and investigate each reported incident and take appropriate action as necessary.
+
+## Conclusion
+
+We believe in fostering a community that celebrates diversity, promotes inclusivity, and upholds the highest standards of respect and collaboration. By adhering to this Code of Conduct, we can collectively create a positive and enriching environment for all participants in the BlissRoms project.
+
+This Code of Conduct is subject to change and improvement over time. Participants are encouraged to provide feedback and suggestions to make our community even better.
