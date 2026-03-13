@@ -1,6 +1,3 @@
----
-icon: code-of-conduct
----
 # Code of Conduct
 
 ## Introduction

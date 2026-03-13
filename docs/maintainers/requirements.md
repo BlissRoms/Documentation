@@ -2,7 +2,8 @@
 
 Before you apply for maintainership to add your device to our official devices list, please read the following requirements carefully.
 
-**Warning: Any violations found or any attempts to circumvent the requirements below may lead to your application being rejected and you being blacklisted from the maintainer program.**
+!!! warning
+    Any violations found or any attempts to circumvent the requirements below may lead to your application being rejected and you being blacklisted from the maintainer program.
 
 1. You must physically own the device you are applying official status for. We do not allow blind builds.
     - We may allow exceptions if a trusted friend owns the device and is willing to help test your builds. However, this will only be approved on a case-by-case basis.

@@ -1,10 +1,10 @@
-### Troubleshooting
+# Troubleshooting
 
 If your build fails, there are several steps you can take to troubleshoot the issue:
 
 1. **Perform a fresh `repo sync`:** Sometimes, your local repository may not be up to date or there could be issues with the internet connection between you and GitHub. Running `repo sync` again can resolve these issues in most cases.
 
-2. **Check your dependencies:** Error messages can provide valuable information about missing shared or linked libraries. Make sure all the necessary dependencies are installed correctly. 
+2. **Check your dependencies:** Error messages can provide valuable information about missing shared or linked libraries. Make sure all the necessary dependencies are installed correctly.
 
 3. **Ensure you sourced `build/envsetup.sh`:** Sourcing the `build/envsetup.sh` script is essential for setting up the build environment. If commands like `breakfast` and `lunch` are not working, it's possible that you missed this step. Source `build/envsetup.sh` again, especially if you have performed a `repo sync`.
 
