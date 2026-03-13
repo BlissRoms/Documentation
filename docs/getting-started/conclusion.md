@@ -1,6 +1,6 @@
-### Conclusion
+# Conclusion
 
-Congratulations on completing the BlissRoms building process! Building a ROM can be challenging and time-consuming, but the results are highly rewarding. 
+Congratulations on completing the BlissRoms building process! Building a ROM can be challenging and time-consuming, but the results are highly rewarding.
 
 Now that you have built BlissRoms, you can explore further possibilities. Consider trying out the "Git Started" guide, where you can make changes, commit them, and submit them for review on our [BlissRoms Gerrit](https://review.blissroms.org) platform. Additionally, you can download experimental commits that are not yet ready for the mainline repositories and provide valuable feedback.
 

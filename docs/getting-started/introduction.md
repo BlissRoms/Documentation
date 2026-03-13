@@ -1,8 +1,3 @@
----
-order: 50
-tags: [guide]
----
-
 # Introduction
 
 ## Overview of the guide and its purpose

@@ -1,7 +1,3 @@
----
-order: 48
-tags: [guide]
----
 # Setting Up Environment
 
 ## Package Installations
@@ -61,7 +57,7 @@ tags: [guide]
    export PATH=~/bin:$PATH
    ```
 
-   - Ctrl-O and enter to save, then Ctrl-X to exit nano. Now either logout and login again \(or reboot\), or `source` the file:
+   - Ctrl-O and enter to save, then Ctrl-X to exit nano. Now either logout and login again (or reboot), or `source` the file:
 
    ```text
    source .bashrc

@@ -7,16 +7,19 @@ on:
 
 jobs:
   publish:
-    name: Publish to docs branch
-
+    name: Publish to GitHub Pages
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: retypeapp/action-build@latest
-
-      - uses: retypeapp/action-github-pages@latest
+      - uses: actions/setup-python@v5
         with:
-          branch: docs
-          update-branch: true
+          python-version: 3.x
+
+      - name: Install MkDocs and Material theme
+        run: pip install mkdocs-material
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
