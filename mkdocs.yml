@@ -59,6 +59,7 @@ nav:
   - Device Customizations:
     - General Overlays: device-customizations/general_overlays.md
     - UDFPS Overlays: device-customizations/UDFPS-overlays.md
+    - GApps Conflicts: device-customizations/gapps_conflicts.md
   - Maintainers:
     - Requirements: maintainers/requirements.md
   - Code of Conduct: code-of-conduct.md
