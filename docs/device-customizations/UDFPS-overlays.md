@@ -57,7 +57,7 @@ Adjust the animation size and vertical offset to match your device's fingerprint
 
 ## UDFPS Animations
 
-**Applies to:** Voyager, Waterlily
+**Applies to:** Voyager, Waterlily and Xylobium
 
 For UDFPS animations to work you need two things in your device tree:
 
@@ -67,8 +67,11 @@ For UDFPS animations to work you need two things in your device tree:
 **Flag required to build UDFPS animation resources:**
 
 ```makefile
-# UDFPS Animations
+# UDFPS Animations (prior to waterlily-qpr2 branches)
 EXTRA_UDFPS_ANIMATIONS := true
+
+# UDFPS Animations (waterlily-qpr2 branches and newer)
+TARGET_HAS_UDFPS := true
 ```
 
 **Default FOD Pressed Color**

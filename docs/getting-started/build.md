@@ -25,8 +25,10 @@ cd ~/bliss/voyager
 **Initialize repo:**
 
 ```shell
-repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.7-stable-voyager --git-lfs
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.x-stable-voyager --git-lfs
 ```
+
+Replace .x with the latest version available from the stable_releases repository
 
 **Sync the repository:**
 
@@ -57,8 +59,44 @@ cd ~/bliss/waterlily
 **Initialize repo:**
 
 ```shell
-repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v19.3-stable-waterlily --git-lfs
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v19.x-stable-waterlily --git-lfs
 ```
+
+Replace .x with the latest version available from the stable_releases repository
+
+**Sync the repository:**
+
+```shell
+repo sync -c --force-sync --no-tags --no-clone-bundle -j10 --optimized-fetch --prune
+```
+
+### Building
+
+```shell
+. build/envsetup.sh
+blissify options deviceCodename
+```
+
+---
+
+## Xylobium (Android 17)
+
+### Initializing Repository
+
+Create a directory for the source code:
+
+```shell
+mkdir -p ~/bliss/xylobium
+cd ~/bliss/xylobium
+```
+
+**Initialize repo:**
+
+```shell
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v20.x-stable-xylobium --git-lfs
+```
+
+Replace .x with the latest version available from the stable_releases repository
 
 **Sync the repository:**
 
@@ -95,6 +133,20 @@ blissify options deviceCodename
 ```shell
 blissify -g deviceCodename
 ```
+On waterlily branches, GApps have tiering which could be used via the following flag added on device.mk / BoardConfig.mk or bliss_devicename.mk
+
+```shell
+# GApps Variant
+TARGET_GAPPS_VARIANT:= pico (otpions are pico, nano, micro, full)
+```
+
+As for the initial version of xylobium, we use [MindTheGapps](https://github.com/MindTheGapps/vendor_gapps)
+So add this to your device.mk / BoardConfig.mk or bliss_devicename.mk
+
+```shell
+# GApps Architecture
+GAPPS_ARCH:= arm64 (options are arm, arm64 and x86_64)
+```
 
 - **To build with FOSS:**
 ```shell
@@ -129,7 +181,7 @@ There are two possible outcomes after the build process:
 cd out/target/product/deviceCodename/
 ```
 
-2. You will find a `.zip` file following the format `Bliss-vxx.xx-deviceCodename-UNOFFICIAL-vanilla-202xxxxx.zip`. Flash it on your device using a custom recovery.
+2. You will find a `.zip` file following the format `Bliss-vxx.xx-deviceCodename-UNOFFICIAL-buildvariant-202xxxxx.zip`. Flash it on your device using a custom recovery.
 
 ## Report Build Issues
 
