@@ -9,10 +9,14 @@
 ## BlissRoms Important Links
 
 - [x] [Website](https://blissroms.org)
-- [x] [Downloads](https://downloads.blissroms.org)
+- [x] [Blog](https://blissroms.org/blog)
+- [x] [Downloads](https://blissroms.org/downloads)
 - [x] [Documentation](https://docs.blissroms.org)
-- [x] [Twitter](https://twitter.com/Bliss_ROMs)
+- [x] [Twitter](https://x.com/bliss_roms)
+- [x] [Facebook](https://www.facebook.com/BlissROMs)
 - [x] [Instagram](https://www.instagram.com/blissroms)
+- [x] [Mastodon](https://mastodon.social/@blissroms)
+- [x] [Bsky](https://bsky.app/profile/blissroms.bsky.social)
 - [x] [Telegram](https://t.me/BlissROM_Updates)
 - [x] [Reddit](https://www.reddit.com/r/BlissRoms)
 - [x] [Source](https://github.com/BlissRoms)
